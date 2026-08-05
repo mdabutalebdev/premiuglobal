@@ -1,0 +1,68 @@
+﻿Ôû▓ Next.js 16.1.2 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+Ô£ô Compiled successfully in 10.7s
+  Running TypeScript ...
+node.exe : Failed to compile.
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Users\User\AppData\Roaming\n 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo          : No 
+   tSpecified: (Failed to compi  
+  le.:String) [], RemoteExcept   
+ ion
+    + FullyQualifiedErrorId : Na 
+   tiveCommandError
+ 
+
+./src/app/(main)/product/1/page.t
+sx:231:75
+Type error: Type '{ id: number; 
+name: string; image: string; 
+price: number; rating: number; 
+reviews: number; category: 
+string; }' is not assignable to 
+type 'Product'.
+  Types of property 'id' are 
+incompatible.
+    Type 'number' is not 
+assignable to type 'string'.
+
+[0m [90m 229 |[39m            
+         [33m<[39m[33m/[39m[
+33mdiv[39m[33m>[39m
+ [90m 230 |[39m                
+     [33m<[39m[33mdiv[39m 
+className[33m=[39m[32m"grid 
+grid-cols-2 md:grid-cols-2 
+lg:grid-cols-4 
+gap-8"[39m[33m>[39m
+[31m[1m>[22m[39m[90m 231 
+|[39m                         
+{relatedProducts[33m.[39mmap(p 
+[33m=>[39m 
+[33m<[39m[33mProductCard[39m 
+key[33m=[39m{p[33m.[39mid} 
+product[33m=[39m{p} 
+[33m/[39m[33m>[39m)}
+ [90m     |[39m                
+                                 
+                          
+[31m[1m^[22m[39m
+ [90m 232 |[39m                
+     [33m<[39m[33m/[39m[33md
+iv[39m[33m>[39m
+ [90m 233 |[39m                
+ [33m<[39m[33m/[39m[33mdiv[
+39m[33m>[39m
+ [90m 234 |[39m             [3
+3m<[39m[33m/[39m[33mdiv[39m
+[33m>[39m[0m
+Next.js build worker exited with 
+code: 1 and signal: null

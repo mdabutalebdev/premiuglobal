@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Green Cardamom 50g">
+  <rect width="160" height="160" fill="#EFF3F7"/>
+  <g transform="translate(80 78) scale(0.86) translate(-80 -80)">
+<ellipse cx="80" cy="142" rx="52" ry="7" fill="#E9DCC6"/>
+  <path d="M30 96h100c0 24-22 40-50 40s-50-16-50-40z" fill="#E8B33A"/>
+  <path d="M30 96h100c0 6-1 11-3 16H33c-2-5-3-10-3-16z" fill="#F2CB6E"/>
+  <path d="M46 96c0-14 12-24 26-24s26 10 26 24z" fill="#E0A22C"/>
+  <path d="M96 96c0-12 10-21 22-21s22 9 22 21z" fill="#C0392B"/>
+  <path d="M20 96c0-11 9-19 20-19s20 8 20 19z" fill="#D9822B"/>
+  <path d="M74 62c3-8 9-12 15-12-1 7-7 12-15 12z" fill="#4C9A3F"/>
+  </g>
+</svg>

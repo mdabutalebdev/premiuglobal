@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Red Lentil (Masoor Dal) 1kg">
+  <rect width="160" height="160" fill="#FBEEE0"/>
+  <g transform="translate(80 78) scale(0.86) translate(-80 -80)">
+<ellipse cx="80" cy="142" rx="52" ry="7" fill="#E9DCC6"/>
+  <rect x="22" y="66" width="44" height="70" rx="5" fill="#E8B33A"/>
+  <rect x="22" y="66" width="44" height="18" rx="5" fill="#F2CB6E"/>
+  <rect x="30" y="96" width="28" height="20" rx="3" fill="#FFF6E2"/>
+  <rect x="58" y="78" width="44" height="58" rx="5" fill="#E4E7EA"/>
+  <rect x="58" y="78" width="44" height="16" rx="5" fill="#F3F5F7"/>
+  <rect x="66" y="104" width="28" height="18" rx="3" fill="#C0392B"/>
+  <rect x="96" y="60" width="42" height="76" rx="5" fill="#D9822B"/>
+  <rect x="96" y="60" width="42" height="18" rx="5" fill="#EBA85A"/>
+  <rect x="104" y="92" width="26" height="20" rx="3" fill="#FFF6E2"/>
+  <path d="M104 122h26" stroke="#B9762A" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

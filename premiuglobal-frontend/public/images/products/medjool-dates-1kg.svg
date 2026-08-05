@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Medjool Dates 1kg">
+  <rect width="160" height="160" fill="#F5F1E6"/>
+  <g transform="translate(80 78) scale(0.86) translate(-80 -80)">
+<ellipse cx="80" cy="136" rx="56" ry="12" fill="#E4D2B2"/>
+  <ellipse cx="80" cy="128" rx="56" ry="12" fill="#F2E3C7"/>
+  <g fill="#8B4A22">
+    <ellipse cx="56" cy="116" rx="14" ry="9" transform="rotate(-18 56 116)"/>
+    <ellipse cx="82" cy="120" rx="14" ry="9" transform="rotate(6 82 120)"/>
+    <ellipse cx="108" cy="114" rx="14" ry="9" transform="rotate(20 108 114)"/>
+    <ellipse cx="68" cy="100" rx="14" ry="9" transform="rotate(-8 68 100)"/>
+    <ellipse cx="96" cy="100" rx="14" ry="9" transform="rotate(12 96 100)"/>
+    <ellipse cx="82" cy="84" rx="14" ry="9" transform="rotate(-4 82 84)"/>
+  </g>
+  <g fill="#A85C2C">
+    <ellipse cx="60" cy="113" rx="7" ry="4" transform="rotate(-18 60 113)"/>
+    <ellipse cx="86" cy="117" rx="7" ry="4" transform="rotate(6 86 117)"/>
+    <ellipse cx="86" cy="81" rx="7" ry="4"/>
+  </g>
+  </g>
+</svg>

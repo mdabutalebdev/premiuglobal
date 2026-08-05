@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Rose Petal Tea 100g">
+  <rect width="160" height="160" fill="#EFF3F7"/>
+  <g transform="translate(80 78) scale(0.86) translate(-80 -80)">
+<ellipse cx="80" cy="142" rx="52" ry="7" fill="#E9DCC6"/>
+  <path d="M34 92c0-20 16-34 36-34s36 14 36 34c0 18-16 30-36 30s-36-12-36-30z" fill="#E8873A"/>
+  <path d="M34 92c0-20 16-34 36-34s36 14 36 34z" fill="#F2A45C"/>
+  <path d="M106 84c14 0 22 6 22 14s-8 14-22 14" fill="none" stroke="#E8873A" stroke-width="9" stroke-linecap="round"/>
+  <path d="M34 96c-12 2-18 8-18 14" fill="none" stroke="#E8873A" stroke-width="9" stroke-linecap="round"/>
+  <rect x="60" y="44" width="20" height="10" rx="5" fill="#B9762A"/>
+  <circle cx="70" cy="42" r="7" fill="#B9762A"/>
+  <path d="M96 36c4-6 0-11 0-11M108 32c4-6 0-11 0-11" stroke="#CBB8A0" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M112 118h30l-4 20a8 8 0 0 1-8 6h-6a8 8 0 0 1-8-6z" fill="#FFF6E2"/>
+  <path d="M114 126h26l-1 6h-24z" fill="#E8B33A"/>
+  </g>
+</svg>

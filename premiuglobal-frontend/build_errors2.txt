@@ -1,0 +1,86 @@
+﻿Ôû▓ Next.js 16.1.2 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+Ô£ô Compiled successfully in 9.4s
+  Running TypeScript ...
+  Collecting page data using 15 workers ...
+  Generating static pages using 15 workers (0/41) ...
+  Generating static pages using 15 workers (10/41) 
+node.exe : Ô¿» useSearchParams() 
+should be wrapped in a suspense 
+boundary at page "/". Read more: 
+https://nextjs.org/docs/messages/
+missing-suspense-with-csr-bailout
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Users\User\AppData\Roaming\n 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo          : No 
+   tSpecified: (Ô¿» useSearchPa  
+  ...ith-csr-bailout:String) [   
+ ], RemoteException
+    + FullyQualifiedErrorId : Na 
+   tiveCommandError
+ 
+    at Q (F:\SAKIB\Web Developmen
+t\Importent\dominion\dominion_cli
+ent\.next\server\chunks\ssr\node_
+modules_next_920e7746._.js:2:2111
+)
+    at o (F:\SAKIB\Web Developmen
+t\Importent\dominion\dominion_cli
+ent\.next\server\chunks\ssr\node_
+modules_next_920e7746._.js:4:5284
+)
+    at F:\SAKIB\Web Development\I
+mportent\dominion\dominion_client
+\.next\server\chunks\ssr\src_10f3
+35cd._.js:1:9549
+    at an (F:\SAKIB\Web Developme
+nt\Importent\dominion\dominion_cl
+ient\node_modules\next\dist\compi
+led\next-server\app-page-turbo.ru
+ntime.prod.js:2:84360)
+    at ai (F:\SAKIB\Web Developme
+nt\Importent\dominion\dominion_cl
+ient\node_modules\next\dist\compi
+led\next-server\app-page-turbo.ru
+ntime.prod.js:2:86179)
+    at ai (F:\SAKIB\Web Developme
+nt\Importent\dominion\dominion_cl
+ient\node_modules\next\dist\compi
+led\next-server\app-page-turbo.ru
+ntime.prod.js:2:104708)
+    at al (F:\SAKIB\Web Developme
+nt\Importent\dominion\dominion_cl
+ient\node_modules\next\dist\compi
+led\next-server\app-page-turbo.ru
+ntime.prod.js:2:107953)
+    at as (F:\SAKIB\Web Developme
+nt\Importent\dominion\dominion_cl
+ient\node_modules\next\dist\compi
+led\next-server\app-page-turbo.ru
+ntime.prod.js:2:105368)
+    at am (F:\SAKIB\Web Developme
+nt\Importent\dominion\dominion_cl
+ient\node_modules\next\dist\compi
+led\next-server\app-page-turbo.ru
+ntime.prod.js:2:112882)
+    at au (F:\SAKIB\Web Developme
+nt\Importent\dominion\dominion_cl
+ient\node_modules\next\dist\compi
+led\next-server\app-page-turbo.ru
+ntime.prod.js:2:109985)
+Error occurred prerendering page 
+"/". Read more: https://nextjs.or
+g/docs/messages/prerender-error
+Export encountered an error on 
+/(main)/page: /, exiting the 
+build.
+Ô¿» Next.js build worker exited 
+with code: 1 and signal: null

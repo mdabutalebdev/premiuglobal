@@ -1,0 +1,1 @@
+src/app/dashboard/admin/shipping/page.tsx(284,85): error TS7006: Parameter 'a' implicitly has an 'any' type.
