@@ -29,20 +29,28 @@ declare global {
 const cached: CachedConnection = global.mongooseCache || { conn: null, promise: null };
 if (!global.mongooseCache) global.mongooseCache = cached;
 
+// Give a buffered query up to 30s to wait for the connection before it errors,
+// so the first requests after a deploy survive a slow database start.
+mongoose.set('bufferTimeoutMS', 30000);
+
 export async function connectDB(): Promise<typeof mongoose> {
     if (cached.conn) return cached.conn;
 
     if (!cached.promise) {
         const opts: mongoose.ConnectOptions = {
-            bufferCommands: false,
+            // Queue queries that arrive while the connection is still being
+            // established instead of throwing "Cannot call X before initial
+            // connection is complete". On a container host the API often boots
+            // before the database is accepting connections.
+            bufferCommands: true,
             maxPoolSize: 10,
-            serverSelectionTimeoutMS: 5000,
+            serverSelectionTimeoutMS: 10000,
             socketTimeoutMS: 45000,
         };
 
         console.log('🔌 Connecting to MongoDB...');
         cached.promise = mongoose.connect(config.database_url, opts).then((m) => {
-            console.log('✅ MongoDB Connected:', config.database_url);
+            console.log('✅ MongoDB Connected:', redactUrl(config.database_url));
             return m;
         });
     }
@@ -58,8 +66,30 @@ export async function connectDB(): Promise<typeof mongoose> {
     return cached.conn;
 }
 
-// ── Connect immediately ───────────────────────────────────────────
-connectDB().catch((err) => console.error('❌ Initial MongoDB connection failed:', err));
+// Never print the password in logs.
+function redactUrl(url: string): string {
+    return url.replace(/\/\/([^:@/]+):([^@/]+)@/, '//$1:****@');
+}
+
+// ── Connect, retrying until it succeeds ───────────────────────────
+// A single fire-and-forget attempt leaves the API permanently broken when the
+// database is not reachable at boot, because nothing ever retries.
+async function connectWithRetry(attempt = 1): Promise<void> {
+    try {
+        await connectDB();
+    } catch {
+        const delay = Math.min(30000, 2000 * attempt);
+        console.error(`⏳ MongoDB unreachable (attempt ${attempt}). Retrying in ${delay / 1000}s...`);
+        console.error('   URL in use:', redactUrl(config.database_url));
+        setTimeout(() => void connectWithRetry(attempt + 1), delay);
+    }
+}
+
+void connectWithRetry();
+
+mongoose.connection.on('disconnected', () => {
+    console.warn('⚠️  MongoDB disconnected — mongoose will attempt to reconnect.');
+});
 
 // ── Start Server ─────────────────────────────────────────────────
 const server = app.listen(config.port, () => {
