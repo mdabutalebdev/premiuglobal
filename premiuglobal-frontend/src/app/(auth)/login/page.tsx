@@ -65,7 +65,7 @@ const LoginPageInner = () => {
 
             {/* Logo */}
             <Link href="/" className="flex justify-center mb-6">
-                <BrandLogo src="/logo.jpg" alt="Premium" className="h-12 w-auto object-contain" />
+                <BrandLogo src="/images/premiumlogo.png" alt="Premium" className="h-14 w-auto object-contain" />
             </Link>
 
             <div className="text-center mb-6">

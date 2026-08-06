@@ -4,13 +4,13 @@
     {
       "name": "backend",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "start:dev", "--prefix", "fresh-food-bazar-backend"],
+      "runtimeArgs": ["run", "start:dev", "--prefix", "premiuglobal-backend"],
       "port": 5000
     },
     {
       "name": "frontend",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev", "--prefix", "fresh-food-bazar-frontend"],
+      "runtimeArgs": ["run", "dev", "--prefix", "premiuglobal-frontend"],
       "port": 3000
     }
   ]
