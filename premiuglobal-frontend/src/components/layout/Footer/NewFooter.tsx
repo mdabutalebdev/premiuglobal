@@ -44,14 +44,14 @@ const NewFooter: React.FC = () => {
         .filter((s: any) => s?.label && s.active !== false);
 
     // WhatsApp link for "Live Chat" — normalized to wa.me format (88 + local digits)
-    const waDigits = (siteRes?.data?.contact?.whatsapp || siteRes?.data?.floating?.whatsapp || '8801961864327').replace(/\D/g, '');
+    const waDigits = (siteRes?.data?.contact?.whatsapp || siteRes?.data?.floating?.whatsapp || '8801915411723').replace(/\D/g, '');
     const waNumber = waDigits.startsWith('880') ? waDigits : waDigits.startsWith('0') ? '88' + waDigits : '880' + waDigits;
     const whatsappLink = `https://wa.me/${waNumber}`;
 
     // Contact info — dynamic from admin / site-content (same source as header)
-    const contactPhone: string = siteRes?.data?.contact?.phone || '+8809666786000';
+    const contactPhone: string = siteRes?.data?.contact?.phone || '+8801915411723';
     const contactEmail: string = siteRes?.data?.contact?.email || 'support@freshfoodbazar.com';
-    const contactAddress: string = siteRes?.data?.contact?.address || 'Plot 1020, Road 9, Avenue 9, Mirpur DOHS, Dhaka 1216';
+    const contactAddress: string = siteRes?.data?.contact?.address || 'Advocat jasim House, Raja bari, Uttar Khan, Uttara, Dhaka';
 
     const handleLogout = () => {
         dispatch(logout());
@@ -69,14 +69,20 @@ const NewFooter: React.FC = () => {
                     {/* Brand + Address + Social */}
                     <div className="sm:col-span-2 lg:col-span-1">
                         <Link href="/" className="inline-flex items-center mb-4">
-                            {/* This column's content is ~122px against a 165px row, so
-                                a 56px logo still doesn't grow the footer. */}
-                            <BrandLogo src={logoUrl} alt="Premium" className="h-28 md:h-32 w-auto object-contain" />
+                            {/* Logo carries a black background, so it sits on a dark
+                                gold-ringed badge to read cleanly on the white footer. */}
+                            <span className="inline-flex items-center justify-center rounded-xl bg-black px-4 py-3 ring-1 ring-[#E5C158]/30 shadow-sm">
+                                <BrandLogo src={logoUrl} alt="PremiuGlobal" className="h-16 md:h-[72px] w-auto object-contain" />
+                            </span>
                         </Link>
                         <div className="space-y-2.5">
                             <div className="flex items-start gap-2.5">
                                 <FiMapPin size={14} className="text-gray-400 mt-0.5 shrink-0" />
                                 <p className="text-sm text-gray-500">{contactAddress}</p>
+                            </div>
+                            <div className="flex items-center gap-2.5">
+                                <FiPhone size={14} className="text-gray-400 shrink-0" />
+                                <a href={`tel:${contactPhone.replace(/\s+/g, '')}`} className="text-sm text-gray-500 hover:text-[var(--color-text-primary)] transition-colors">{contactPhone}</a>
                             </div>
                             <div className="flex items-center gap-2.5">
                                 <FiMail size={14} className="text-gray-400 shrink-0" />
@@ -135,22 +141,15 @@ const NewFooter: React.FC = () => {
                         </ul>
                     </div>
 
-                    {/* Payment Methods */}
+                    {/* Payment Methods — one strip showing every supported method */}
                     <div>
                         <h4 className="text-sm font-bold text-gray-900 mb-4 uppercase tracking-wide">We Accept</h4>
-                        <div className="grid grid-cols-2 gap-2.5 max-w-[260px]">
-                            {[
-                                { name: 'bKash', logo: '/images/payment-bkash.jpg' },
-                                { name: 'Nagad', logo: '/images/payment-nagad.svg' },
-                                { name: 'Rocket', logo: '/images/payment-rocket.webp' },
-                                { name: 'Upay', logo: '/images/payment-upay.webp' },
-                            ].map((p) => (
-                                <div key={p.name} className="bg-white border border-gray-200 rounded-lg h-12 flex items-center justify-center p-2">
-                                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                                    <img src={p.logo} alt={p.name} className="max-h-full max-w-full object-contain" />
-                                </div>
-                            ))}
-                        </div>
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                            src="/images/Payment-2048x196-1.png"
+                            alt="Accepted payment methods: bKash, Nagad, Rocket, DBBL Nexus, Visa, Mastercard"
+                            className="w-full max-w-[340px] h-auto"
+                        />
                     </div>
                 </div>
             </div>
@@ -160,7 +159,7 @@ const NewFooter: React.FC = () => {
                 <div className="container mx-auto px-4 py-4">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-2">
                         <p className="text-xs text-gray-400">
-                            Copyright © {new Date().getFullYear()} Premium
+                            Copyright © {new Date().getFullYear()} PremiuGlobal
                         </p>
                         <div className="flex items-center gap-4">
                             <Link href="/terms" className="text-xs text-gray-400 hover:text-[var(--color-text-primary)] transition-colors">Terms & Conditions</Link>

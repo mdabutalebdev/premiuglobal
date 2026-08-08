@@ -4,7 +4,7 @@ import LegalPageLayout from '@/components/shared/LegalPageLayout';
 
 export const metadata: Metadata = {
     title: "FAQs",
-    description: "Frequently asked questions about ordering, payment, delivery, and returns at Premium.",
+    description: "Frequently asked questions about ordering, payment, delivery, and returns at PremiuGlobal.",
     alternates: { canonical: "/faq" },
 };
 

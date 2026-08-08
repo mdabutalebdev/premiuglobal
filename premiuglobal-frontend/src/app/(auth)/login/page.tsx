@@ -63,9 +63,11 @@ const LoginPageInner = () => {
     return (
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-8">
 
-            {/* Logo */}
+            {/* Logo — dark badge because the emblem has a black background */}
             <Link href="/" className="flex justify-center mb-6">
-                <BrandLogo src="/images/premiumlogo.png" alt="Premium" className="h-14 w-auto object-contain" />
+                <span className="inline-flex items-center justify-center rounded-xl bg-black px-4 py-2.5 ring-1 ring-[#E5C158]/30 shadow-sm">
+                    <BrandLogo src="/images/premiuglobal-logo.jpeg" alt="PremiuGlobal" className="h-12 w-auto object-contain" />
+                </span>
             </Link>
 
             <div className="text-center mb-6">

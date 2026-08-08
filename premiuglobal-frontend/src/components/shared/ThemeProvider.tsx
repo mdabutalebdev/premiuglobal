@@ -12,9 +12,9 @@ interface ThemeContextType {
     isLoaded: boolean;
 }
 
-// User's brand logo (transparent PNG so it blends into any header background —
-// the old /logo.jpg had a solid white box). Falls back to /logo.svg via onError if missing.
-const DEFAULT_LOGO = '/images/premiumlogo.png';
+// User's brand logo — the gold PremiuGlobal emblem. It ships with a baked-in
+// black background, so every place that shows it sits it on a dark badge/row.
+const DEFAULT_LOGO = '/images/premiuglobal-logo.jpeg';
 
 const defaultTheme: ThemeContextType = {
     primaryColor: '#003B88',

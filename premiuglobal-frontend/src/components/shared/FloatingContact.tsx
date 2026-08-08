@@ -12,7 +12,7 @@ const FloatingContact: React.FC = () => {
 
     // Normalize to wa.me format: digits only, with BD country code (880)
     // Falls back to the main number before site content loads from DB
-    const digits = (f?.whatsapp || '8801571541370').replace(/\D/g, '');
+    const digits = (f?.whatsapp || '8801915411723').replace(/\D/g, '');
     const whatsappNumber = digits.startsWith('880')
         ? digits
         : digits.startsWith('0')

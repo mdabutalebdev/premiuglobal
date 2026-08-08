@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import NewHomePage from '@/components/home/NewHomePage';
 
 export const metadata: Metadata = {
-  // Homepage tab shows the brand only — nothing after "Premium".
-  title: { absolute: "Premium" },
-  description: "Premium — shop fresh, quality food and grocery at the best prices, delivered across Bangladesh.",
+  // Homepage tab shows the brand only — nothing after "PremiuGlobal".
+  title: { absolute: "PremiuGlobal" },
+  description: "PremiuGlobal — shop fresh, quality food and grocery at the best prices, delivered across Bangladesh.",
   alternates: { canonical: "/" },
 };
 

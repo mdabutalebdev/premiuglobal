@@ -22,9 +22,9 @@ export async function generateMetadata(
                     .slice(0, 160);
                 return {
                     title: p.name,
-                    description: desc || `${p.name} — available now at Premium.`,
+                    description: desc || `${p.name} — available now at PremiuGlobal.`,
                     openGraph: {
-                        title: `${p.name} | Premium`,
+                        title: `${p.name} | PremiuGlobal`,
                         images: p.thumbnail ? [{ url: p.thumbnail }] : undefined,
                     },
                 };

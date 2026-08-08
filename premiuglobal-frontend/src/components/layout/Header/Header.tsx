@@ -15,13 +15,19 @@ import { useGetSiteContentQuery } from '@/redux/api/siteContentApi';
 import { clearImageSearch } from '@/redux/slices/imageSearchSlice';
 import { openCartModal, toggleMobileMenu, closeMobileMenu } from '@/redux/slices/uiSlice';
 import { logout } from '@/redux/slices/authSlice';
-import { useTheme } from '@/components/shared/ThemeProvider';
 import SearchBox from './SearchBox';
 import BrandLogo from '@/components/shared/BrandLogo';
 
 const BRAND_ORANGE = '#F47B20';
-const NAV_BG = '#0C2E20';
-const ACTION_FG = '#1F3347';
+// Menu bar: white with black links, sitting under the black logo row for a
+// clean high-contrast header.
+const NAV_BG = '#ffffff';
+// Header row 1 is now black to match the PremiuGlobal logo, so the action
+// icons/labels are white to stay legible on it.
+const ACTION_FG = '#FFFFFF';
+// The header logo is fixed to the dark PremiuGlobal emblem (baked-in black
+// background), independent of the theme logo the footer uses on its white bg.
+const HEADER_LOGO = '/images/premiuglobal-logo.jpeg';
 
 interface Category {
     _id: string;
@@ -87,8 +93,8 @@ const Header: React.FC = () => {
 
     // Contact details for the "More" menu — same source the footer uses
     const { data: siteRes } = useGetSiteContentQuery(undefined);
-    const contactPhone: string = siteRes?.data?.contact?.phone || '01571541370';
-    const waDigits = (siteRes?.data?.contact?.whatsapp || siteRes?.data?.floating?.whatsapp || '8801571541370').replace(/\D/g, '');
+    const contactPhone: string = siteRes?.data?.contact?.phone || '+8801915411723';
+    const waDigits = (siteRes?.data?.contact?.whatsapp || siteRes?.data?.floating?.whatsapp || '8801915411723').replace(/\D/g, '');
     const moreHref = (l: MoreLink) => {
         if (l.dynamic === 'phone') return `tel:${contactPhone.replace(/\s+/g, '')}`;
         if (l.dynamic === 'whatsapp') return `https://wa.me/${waDigits}`;
@@ -185,7 +191,7 @@ const Header: React.FC = () => {
         <header className="sticky top-0 z-50 shadow-sm">
 
             {/* ═══════════ ROW 1 — logo · search · actions ═══════════ */}
-            <div className="bg-white">
+            <div className="bg-black">
                 <div className="mx-auto max-w-[1500px] px-4 lg:px-8">
                     <div className="relative flex items-center gap-4 h-[64px] md:h-[72px] lg:h-[88px]">
 
@@ -349,7 +355,7 @@ const Header: React.FC = () => {
                     {/* Wraps instead of scrolling: a centred flex row that overflows gets
                         clipped on BOTH edges and the first item can never be scrolled
                         back into view, which is how the end categories went missing. */}
-                    <ul className="flex flex-wrap items-center justify-center gap-x-5 xl:gap-x-7 min-h-[44px] text-white text-[14px] xl:text-[14.5px] whitespace-nowrap">
+                    <ul className="flex flex-wrap items-center justify-center gap-x-5 xl:gap-x-7 min-h-[44px] text-black text-[14px] xl:text-[14.5px] whitespace-nowrap">
                         {navItems.map((item) => {
                             // A parent also counts as active while one of its children is open
                             const active = isActiveHref(item.href) || item.children.some((c) => isActiveHref(c.href));
@@ -498,17 +504,18 @@ function MobileLink({ href, label, onClick }: { href: string; label: string; onC
     );
 }
 
-/* Logo comes from the theme so admins can swap it without a deploy */
+/* Dark PremiuGlobal emblem, fixed for the black header row. Its baked-in black
+   background blends into the row, so it isn't the theme logo (that one still
+   drives the white-bg footer). */
 function HeaderLogo() {
-    const { logoUrl } = useTheme();
     // eslint-disable-next-line @next/next/no-img-element
     return (
         <BrandLogo
-            src={logoUrl}
-            alt="Premium"
-            /* Row is h-64/72/88 — these heights keep the logo comfortably inside
-               the row, so the header height is unchanged. */
-            className="h-[100px] md:h-[120px] lg:h-[150px] w-auto object-contain"
+            src={HEADER_LOGO}
+            alt="PremiuGlobal"
+            /* Row is h-64/72/88 — these heights keep the rectangular logo inside
+               the row so its black edges don't spill onto the green nav below. */
+            className="h-[46px] md:h-[54px] lg:h-[66px] w-auto object-contain"
         />
     );
 }

@@ -4,7 +4,7 @@ import LegalPageLayout from '@/components/shared/LegalPageLayout';
 
 export const metadata: Metadata = {
     title: "Terms & Conditions",
-    description: "Read the Terms & Conditions for using Premium's trading, sourcing, and shipping services in Bangladesh.",
+    description: "Read the Terms & Conditions for using PremiuGlobal's trading, sourcing, and shipping services in Bangladesh.",
     alternates: { canonical: "/terms" },
 };
 

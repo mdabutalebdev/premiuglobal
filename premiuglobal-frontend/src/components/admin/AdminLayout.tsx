@@ -111,7 +111,9 @@ const AdminLayoutInner: React.FC<AdminLayoutProps> = ({ children }) => {
                 padding: '0 18px', borderBottom: '1px solid #f1f3f5', flexShrink: 0,
             }}>
                 <Link href="/dashboard/admin" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '10px', minWidth: 0 }}>
-                    <BrandLogo src={logoUrl} alt="Premium" className="h-20 w-auto object-contain" />
+                    <span className="inline-flex items-center justify-center rounded-lg bg-black px-2.5 py-1.5 ring-1 ring-[#E5C158]/30">
+                        <BrandLogo src={logoUrl} alt="PremiuGlobal" className="h-9 w-auto object-contain" />
+                    </span>
                     <span style={{
                         fontSize: '9px', fontWeight: 700, color: '#98a2b3',
                         textTransform: 'uppercase', letterSpacing: '0.9px',

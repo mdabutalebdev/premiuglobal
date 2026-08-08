@@ -133,10 +133,10 @@ const ShipForMePage: React.FC = () => {
                     <div className="flex-1">
                         <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
                             Simplify Your Shipping with{' '}
-                            <span className="text-[var(--color-text-primary)]">Premium</span>
+                            <span className="text-[var(--color-text-primary)]">PremiuGlobal</span>
                         </h1>
                         <p className="text-gray-500 text-base leading-relaxed mb-8 max-w-lg">
-                            Premium offers a seamless solution for shipping your products from different countries
+                            PremiuGlobal offers a seamless solution for shipping your products from different countries
                             directly to your doorstep. Our Ship for Me service ensures a hassle-free experience by
                             handling all logistics, letting you focus on your business.
                         </p>
@@ -262,7 +262,7 @@ const ShipForMePage: React.FC = () => {
             <section className="w-full py-14 px-4 bg-gray-50">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-2xl font-bold text-gray-800 text-center mb-10">
-                        Why Choose Premium Shipment Services?
+                        Why Choose PremiuGlobal Shipment Services?
                     </h2>
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
                         {features.map((f, i) => (
@@ -306,7 +306,7 @@ const ShipForMePage: React.FC = () => {
                 <div className="max-w-2xl mx-auto text-center">
                     <h2 className="text-3xl font-extrabold text-[var(--color-primary-foreground)] mb-3">Ready to Start?</h2>
                     <p className="text-[var(--color-primary-foreground)] text-sm mb-8">
-                        Experience the convenience of Premium Ship for Me service.
+                        Experience the convenience of PremiuGlobal Ship for Me service.
                         Click below to get started with your shipping request!
                     </p>
                     <Link

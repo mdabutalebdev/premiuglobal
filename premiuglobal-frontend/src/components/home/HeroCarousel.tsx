@@ -49,7 +49,7 @@ const HeroCarousel: React.FC<{ slides: HeroSlide[]; className?: string }> = ({ s
                             mobile 16/9 → 100%, sm 16/7 → 128.57%, lg 16/5.5 → 163.64%. */}
                         <iframe
                             src={isActive ? embed : 'about:blank'}
-                            title="Premium"
+                            title="PremiuGlobal"
                             allow="autoplay; encrypted-media"
                             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full sm:h-[128.571%] lg:h-[163.636%] border-0"
                         />
@@ -83,7 +83,7 @@ const HeroCarousel: React.FC<{ slides: HeroSlide[]; className?: string }> = ({ s
         return (
             <img
                 src={slide.imageUrl || '/images/hero%20banar01.png'}
-                alt="Premium"
+                alt="PremiuGlobal"
                 className="w-full h-full object-cover"
             />
         );

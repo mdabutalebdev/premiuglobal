@@ -4,7 +4,7 @@ import LegalPageLayout from '@/components/shared/LegalPageLayout';
 
 export const metadata: Metadata = {
     title: "Refund & Return Policy",
-    description: "Understand Premium's refund and return policy — how to request a refund, eligibility, and timelines for orders shipped to Bangladesh.",
+    description: "Understand PremiuGlobal's refund and return policy — how to request a refund, eligibility, and timelines for orders shipped to Bangladesh.",
     alternates: { canonical: "/refund" },
 };
 

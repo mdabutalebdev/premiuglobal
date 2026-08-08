@@ -55,7 +55,7 @@ const features = [
 const testimonials = [
     {
         rating: 4,
-        quote: "Stunning Premium's customer support team, they help me to select winning products and grow my business.",
+        quote: "Stunning PremiuGlobal's customer support team, they help me to select winning products and grow my business.",
         name: 'Sheikh Sakibul Hasan',
         title: 'Founder and CEO',
         avatar: 'ðŸ‘¨â€ðŸ’¼',

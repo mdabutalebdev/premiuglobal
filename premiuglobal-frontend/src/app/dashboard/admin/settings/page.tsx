@@ -83,8 +83,8 @@ export default function SettingsPage() {
         if (res?.data) {
             setFormData({
                 general: res.data.general || {
-                    storeName: 'Premium',
-                    tagline: 'Premium International E-Commerce',
+                    storeName: 'PremiuGlobal',
+                    tagline: 'PremiuGlobal International E-Commerce',
                     currency: 'BDT',
                 },
                 seo: res.data.seo || {
@@ -229,7 +229,7 @@ export default function SettingsPage() {
                                     <img src={theme.logoUrl} alt="Logo" className="h-8 object-contain" />
                                 ) : (
                                     <div className="h-8 px-4 rounded-md flex items-center font-bold text-sm" style={{ background: theme.primaryColor || 'var(--color-primary)', color: previewFg }}>
-                                        {g.storeName || 'Premium'}
+                                        {g.storeName || 'PremiuGlobal'}
                                     </div>
                                 )}
                             </div>
@@ -308,7 +308,7 @@ export default function SettingsPage() {
 
                 {/* ═══════ SEO ═══════ */}
                 <SettingSection icon={FiGlobe} title="SEO & Marketing" description="Search engine and tracking settings">
-                    <InputField label="Meta Title" value={seo.title || ''} onChange={(e: any) => updateSeo('title', e.target.value)} placeholder="Premium - Premium E-Commerce" helper="Recommended: 50-60 characters" />
+                    <InputField label="Meta Title" value={seo.title || ''} onChange={(e: any) => updateSeo('title', e.target.value)} placeholder="PremiuGlobal - Premium E-Commerce" helper="Recommended: 50-60 characters" />
                     <InputField label="Meta Description" type="textarea" value={seo.description || ''} onChange={(e: any) => updateSeo('description', e.target.value)} placeholder="Brief description of your store" helper="Recommended: 150-160 characters" />
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <InputField label="Google Analytics ID" value={seo.googleAnalyticsId || ''} onChange={(e: any) => updateSeo('googleAnalyticsId', e.target.value)} placeholder="G-XXXXXXXXXX" helper="Your GA4 measurement ID" />

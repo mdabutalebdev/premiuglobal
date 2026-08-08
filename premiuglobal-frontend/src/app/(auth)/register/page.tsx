@@ -87,7 +87,7 @@ const RegisterPageInner = () => {
 
             <div style={{ marginBottom: '32px' }}>
                 <h1 style={{ fontSize: '28px', fontWeight: 900, color: 'var(--color-primary)', margin: '0 0 6px', letterSpacing: '-0.5px' }}>Create Account</h1>
-                <p style={{ fontSize: '14px', color: '#6b7280', margin: 0, fontWeight: 500 }}>Join Premium for a better trading experience</p>
+                <p style={{ fontSize: '14px', color: '#6b7280', margin: 0, fontWeight: 500 }}>Join PremiuGlobal for a better trading experience</p>
             </div>
 
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>

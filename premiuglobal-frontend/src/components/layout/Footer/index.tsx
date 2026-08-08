@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
                             <div className="w-10 h-10 rounded-md bg-[var(--color-primary)] flex items-center justify-center text-[var(--color-primary-foreground)] font-bold text-xl">
                                 M
                             </div>
-                            <span className="text-2xl font-semibold text-white">Premium</span>
+                            <span className="text-2xl font-semibold text-white">PremiuGlobal</span>
                         </div>
                         <p className="text-sm leading-relaxed mb-6 italic">
                             "Providing the best products for our customers since 2020. Quality and satisfaction guaranteed."
@@ -142,7 +142,7 @@ const Footer: React.FC = () => {
             <div className="bg-[#111111] py-8">
                 <div className="container mx-auto px-4 sm:px-8 md:px-12 lg:px-16 flex flex-col md:flex-row justify-between items-center gap-6">
                     <p className="text-sm text-gray-500">
-                        Copyright © {new Date().getFullYear()} <span className="text-white font-bold">Premium</span>. All Rights Reserved.
+                        Copyright © {new Date().getFullYear()} <span className="text-white font-bold">PremiuGlobal</span>. All Rights Reserved.
                     </p>
                     <div className="flex items-center gap-4 grayscale opacity-50">
                         <FaCcVisa size={30} />

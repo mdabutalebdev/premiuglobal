@@ -1,7 +1,7 @@
 import TalkToExpertPage from '@/components/home/TalkToExpertPage';
 
 export const metadata = {
-    title: 'Talk to the Expert | Premium',
+    title: 'Talk to the Expert | PremiuGlobal',
     description: 'Connect with our expert support team to grow your business.',
 };
 

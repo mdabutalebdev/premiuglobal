@@ -67,11 +67,11 @@ const HeroSection: React.FC = () => {
                                 single.link ? (
                                     <Link href={single.link} className="block w-full h-full">
                                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                                        <img src={single.imageUrl} alt="Premium" className="w-full h-full object-cover" />
+                                        <img src={single.imageUrl} alt="PremiuGlobal" className="w-full h-full object-cover" />
                                     </Link>
                                 ) : (
                                     // eslint-disable-next-line @next/next/no-img-element
-                                    <img src={single.imageUrl} alt="Premium" className="w-full h-full object-cover" />
+                                    <img src={single.imageUrl} alt="PremiuGlobal" className="w-full h-full object-cover" />
                                 )
                             ) : (
                                 <HeroCarousel

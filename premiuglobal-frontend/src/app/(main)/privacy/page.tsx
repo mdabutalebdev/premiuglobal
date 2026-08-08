@@ -4,7 +4,7 @@ import LegalPageLayout from '@/components/shared/LegalPageLayout';
 
 export const metadata: Metadata = {
     title: "Privacy Policy",
-    description: "Learn how Premium collects, uses, and protects your personal data when you use our trading and shipping services.",
+    description: "Learn how PremiuGlobal collects, uses, and protects your personal data when you use our trading and shipping services.",
     alternates: { canonical: "/privacy" },
 };
 

@@ -19,7 +19,7 @@ export function sendOrderToWhatsApp(data: {
         `${i + 1}. ${item.name || 'Product'} × ${item.quantity}${item.color ? ` (${item.color})` : ''}${item.size ? ` [${item.size}]` : ''}${item.price ? ` — ৳${item.price}` : ''}`
     ).join('\n');
 
-    const msg = `🛒 *New Order — Premium*
+    const msg = `🛒 *New Order — PremiuGlobal*
 
 👤 *Name:* ${data.customerName}
 📞 *Contact:* ${data.customerContact}
@@ -48,7 +48,7 @@ export function sendInquiryToWhatsApp(data: {
     const phone = data.adminPhone || ADMIN_WHATSAPP;
     const variantInfo = [data.color, data.size].filter(Boolean).join(' / ');
 
-    const msg = `❓ *New Inquiry — Premium*
+    const msg = `❓ *New Inquiry — PremiuGlobal*
 
 👤 *Name:* ${data.customerName}
 📞 *Contact:* ${data.customerContact}

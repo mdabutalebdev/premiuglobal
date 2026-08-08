@@ -13,7 +13,7 @@ const Loader: React.FC = () => {
             </div>
             <div className="flex flex-col items-center">
                 <p className="text-lg font-bold text-gray-800 animate-pulse">Loading...</p>
-                <p className="text-xs text-gray-400 font-medium uppercase tracking-[0.2em] mt-1">Premium</p>
+                <p className="text-xs text-gray-400 font-medium uppercase tracking-[0.2em] mt-1">PremiuGlobal</p>
             </div>
         </div>
     );

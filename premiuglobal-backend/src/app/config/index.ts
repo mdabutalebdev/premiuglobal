@@ -22,7 +22,7 @@ if (dnsServers.length) {
 export default {
     env: process.env.NODE_ENV || 'development',
     port: process.env.PORT || 5000,
-    database_url: process.env.DATABASE_URL || 'mongodb://root:YW5Wu4SWBFdb0zaByuhw01AnXhcrnEdTAngX1TSYrAlNZug3lLvy0ZmpYeBHc9jU@169.58.128.155:27017/freshfoodbazar?authSource=admin',
+    database_url: process.env.DATABASE_URL || 'mongodb://root:YW5Wu4SWBFdb0zaByuhw01AnXhcrnEdTAngX1TSYrAlNZug3lLvy0ZmpYeBHc9jU@169.58.128.155:27017/freshfoodbazar?authSource=admin&directConnection=true',
 
     dns_servers: dnsServers,
 

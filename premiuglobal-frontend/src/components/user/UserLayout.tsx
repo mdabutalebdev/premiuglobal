@@ -76,7 +76,9 @@ const UserLayout = ({ children }: { children: React.ReactNode }) => {
                                 {mobileMenuOpen ? <FiX size={22} /> : <FiMenu size={22} />}
                             </button>
                             <Link href="/" className="flex items-center group">
-                                <BrandLogo src={logoUrl} alt="Premium" className="h-24 w-auto object-contain" />
+                                <span className="inline-flex items-center justify-center rounded-lg bg-black px-2.5 py-1 ring-1 ring-[#E5C158]/30">
+                                    <BrandLogo src={logoUrl} alt="PremiuGlobal" className="h-7 w-auto object-contain" />
+                                </span>
                             </Link>
                         </div>
 

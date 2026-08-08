@@ -9,7 +9,7 @@ export default function AuthLayout({
                 {children}
             </div>
             <p className="mt-6 text-xs text-gray-400">
-                © {new Date().getFullYear()} Premium. All rights reserved.
+                © {new Date().getFullYear()} PremiuGlobal. All rights reserved.
             </p>
         </div>
     );

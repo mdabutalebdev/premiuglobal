@@ -11,7 +11,7 @@
 
 export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || '';
 
-/** Site currency — Premium prices are in Bangladeshi Taka (৳). */
+/** Site currency — PremiuGlobal prices are in Bangladeshi Taka (৳). */
 export const GA_CURRENCY = 'BDT';
 
 // ── gtag typing ──────────────────────────────────────────────────

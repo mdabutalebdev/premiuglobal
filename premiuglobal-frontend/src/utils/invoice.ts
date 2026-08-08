@@ -29,7 +29,7 @@ const fmtDate = (d: unknown): string => {
 
 /** Builds the standalone invoice HTML document for an order (pure — no DOM access). */
 export function buildInvoiceHtml(order: any, opts?: { company?: string; autoPrint?: boolean }): string {
-    const company = opts?.company || 'Premium';
+    const company = opts?.company || 'PremiuGlobal';
     const invNo = order.orderId || order.orderNumber || (order._id ? `#${String(order._id).slice(-8).toUpperCase()}` : 'INVOICE');
     const addr = order.shippingAddress || {};
     const customerName = addr.fullName || (order.user ? `${order.user.firstName || ''} ${order.user.lastName || ''}`.trim() : '') || 'Customer';

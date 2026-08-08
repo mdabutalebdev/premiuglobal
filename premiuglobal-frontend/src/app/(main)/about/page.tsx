@@ -4,7 +4,7 @@ import LegalPageLayout from '@/components/shared/LegalPageLayout';
 
 export const metadata: Metadata = {
     title: "About Us",
-    description: "Learn about Premium — who we are, what we source, and how we deliver across Bangladesh.",
+    description: "Learn about PremiuGlobal — who we are, what we source, and how we deliver across Bangladesh.",
     alternates: { canonical: "/about" },
 };
 
