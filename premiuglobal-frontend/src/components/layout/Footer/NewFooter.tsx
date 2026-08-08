@@ -169,6 +169,18 @@ const NewFooter: React.FC = () => {
                             <Link href="/refund" className="text-xs text-gray-400 hover:text-[var(--color-text-primary)] transition-colors">Refund Policy</Link>
                         </div>
                     </div>
+                    {/* Developer credit */}
+                    <p className="mt-3 text-center text-xs text-gray-400">
+                        Developed by{' '}
+                        <a
+                            href="https://www.extrainweb.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-semibold text-gray-500 hover:text-[var(--color-text-primary)] transition-colors"
+                        >
+                            Extrain Web
+                        </a>
+                    </p>
                 </div>
             </div>
         </footer>
